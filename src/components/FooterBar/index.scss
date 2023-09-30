@@ -1,0 +1,35 @@
+footer{
+    bottom: 0;
+    position:absolute;
+    width: 100%;
+}
+
+.footer-nav {
+    text-align: center;
+    .nav-bar-footer{
+        ul{
+            justify-content: center;
+            display: flex;
+            padding: 0;
+            li{
+                list-style:none;
+                margin: 0 1em 0 1em;
+                a{
+                    cursor:pointer;
+                    transition:all .2s;
+                    -webkit-transition:all .2s;
+                    font-size: 2em;
+                    svg:hover{
+                        color:var(--color-5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container-footer{    
+    margin-right: auto;
+    margin-left: auto;
+}
+

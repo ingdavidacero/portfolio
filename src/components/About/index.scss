@@ -1,0 +1,75 @@
+
+.about-page{
+    section{
+        margin-top: var(--spacing-xs);
+    }
+    .title-about{
+        h1{
+            text-align: center;
+            font-size: var(--80px);
+            margin-top: var(--spacing-m);
+            margin-bottom: var(--spacing-xs);
+        }
+    }
+    .me{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .radius{
+            object-fit: cover;
+            width: 100%;
+            border-radius: 200px;
+            border: 3px solid var(--color-4);
+        }
+    }
+    .text-zone{
+        h1{
+            color: var(--color-5);
+            margin: 0;
+            font-size: var(--font-h2-display);
+            margin-top: var(--spacing-xs);
+            margin-bottom: var(--spacing-xs);
+        }    margin-top: var(--spacing-xs);
+        p{
+            color: var(--color-5);
+            font-size: var(--font-body);
+            font-weight: 600;
+            font-size: var(--36px);
+        }
+    }
+    .grid{
+        display: grid;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        width: 100%;
+        grid-template-columns: repeat(25,1fr)
+    }
+    .experiencia{
+        row-gap: var(--spacing-m);
+    }
+    .techstack{
+        .tech_icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            padding: 5px;
+            img{
+                width: 40%;
+            }
+            span{
+                font-size: var(--24px);
+                font-weight: 600;
+            }
+        }
+    }
+    .hobbies{
+        .card-travel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+    }
+}

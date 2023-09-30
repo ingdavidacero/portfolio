@@ -1,0 +1,38 @@
+.projects-page{
+    height: 85vh;
+    .text-zone{
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 100%;
+        max-height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinea verticalmente */
+        justify-content: center;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: var(--font-h1-big);
+        margin: 0;
+        span{
+            margin: 0 10px 0 10px;
+        }
+    }
+    .description{
+        color: #fff;
+        font-size: var(--font-h2);
+        font-weight: 600;
+        letter-spacing: 4px;
+        animation: fadeIn 0.8s 1s backwards;
+        text-align: center;
+        padding-top: 10px;
+        font-style: italic;
+        span{
+            font-style: normal;
+        }
+    }
+}

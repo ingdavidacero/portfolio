@@ -1,0 +1,83 @@
+.macos-window {
+    width: 100%;
+    min-height: 100px;
+    border-radius: 20px;
+    background-color: var(--color-5);
+    .window-title-bar {
+        position: relative;
+        border-bottom: 2px solid #dbdbdb;
+        background-color: var(--color-4);
+        overflow: hidden;
+        padding: 5px;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .window-dots {
+            position: absolute;
+            left: 15px;
+        }
+        .window-dots{
+            .window-dot{
+                width: 10px;
+                height: 10px;
+                background-color: var(--color-2);
+                margin-right: 2px;
+                display: inline-block;
+                border-radius: 50%;
+            }
+        }
+        .window-title {
+            width: 50%;
+            background-color: var(--color-5);
+            color: #999;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow-wrap: normal;
+            overflow: hidden;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-family: 'Hevletica Neue', 'Helvetica', sans-serif;
+            font-size: 14px;
+        }
+    }
+    .window-content {
+        padding: 20px;
+        color: var(--color-2);
+        overflow-wrap:break-word;
+        h1{
+            text-align: center;
+            font-size: var(--42px);
+            font-weight: 800;
+        }
+        h2{
+            font-size: var(--40px);
+            font-weight: 700;
+            font-style: italic;
+        }
+        p, span, a{
+            font-size: var(--30px);
+            font-weight: 400;
+        }
+        .projects-content{
+            padding-top: 15px;
+            div{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                ol{
+                    justify-content: center;
+                    display: flex;
+                    li{
+                        display:inline-block;
+                        list-style:none;
+                        margin: 10px;
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+}
