@@ -6,11 +6,33 @@ import Card from '../Card'
 import SvgHtml from '../../assets/images/logos/html.svg'
 import SvgReact from '../../assets/images/logos/react.svg'
 import SvgSass from '../../assets/images/logos/sass.svg'
+import SvgPHP from '../../assets/images/logos/php.svg'
+import SvgMysql from '../../assets/images/logos/mysql.svg'
 //Imagenes
 import ImgProyectos from '../../assets/images/proyectos/portafolio.jpg'
+import ImgAtenea from '../../assets/images/proyectos/atenea.jpg'
 
 function Projects(){
     const proyectos = [
+        {
+            'id':2,
+            'url':'https://github.com/ingdavidacero/ateneaapp',
+            'titulo':'Atenea',
+            'descripcion':'Atenea es un sistema de preguntas estilo "¿Quién quiere ser millonario?" denominado así por la diosa griega de la guerra que aparte es considerada la diosa de la sabiduría. El objetivo de este proyecto es mostrar un API con PHP sin el uso de ningún framework.',
+            'imagen':ImgAtenea,
+            'techstack':[
+                {
+                    'id':1,
+                    'nombre':'PHP',
+                    'imagen': SvgPHP
+                },
+                {
+                    'id':2,
+                    'nombre':'MYSQL',
+                    'imagen': SvgMysql
+                }
+            ]
+        },
         {
             'id':1,
             'url':'https://github.com/ingdavidacero/portfolio',
