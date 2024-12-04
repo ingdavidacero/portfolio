@@ -25,21 +25,16 @@
         justify-content: center;
     }
     h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         color: #fff;
-        font-size: var(--font-h1-big);
-        margin: 0;
-        span{
-            margin: 0 10px 0 10px;
-        }
+        font-size: var(--font-h1);
+        letter-spacing: 4px;
+        text-align: center;
+        padding-top: 10px;
     }
     h2{
         color: #fff;
         font-size: var(--font-h2);
         letter-spacing: 4px;
-        animation: fadeIn 0.8s 1s backwards;
         text-align: center;
         padding-top: 10px;
     }
@@ -59,5 +54,47 @@
     .flat-button:hover{
         background-color: var(--color-4);
         color: var(--color-1);
+    }
+    .container-llave{
+        margin-top: 25px;
+        width: 100px;
+        height: 100px;
+        transform-origin: left top;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+    }
+    
+    .container-llave img{
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+    
+    .activo{
+        animation-name: layer;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+
+@keyframes layer {
+    0%{
+        transform: rotate(0deg);
+    }
+    15%{
+        transform: rotate(90deg);
+    }
+    30%{
+        transform: rotate(20deg);
+    }
+    45%{
+        transform: rotate(60deg);
+    }
+    60%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }

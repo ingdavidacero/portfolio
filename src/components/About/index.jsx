@@ -14,51 +14,83 @@ import SvgMySql from '../../assets/images/logos/mysql.svg'
 import SvgPhp from '../../assets/images/logos/php.svg'
 import SvgReact from '../../assets/images/logos/react.svg'
 import SvgSass from '../../assets/images/logos/sass.svg'
+import NodeJs from '../../assets/images/logos/node.svg'
+import Laravel from '../../assets/images/logos/laravel.svg'
 //Imagenes
 import ImgBarichara from '../../assets/images/viajes/barichara.jpg'
 import ImgCaboDeLaVela from '../../assets/images/viajes/cabo_de_la_vela.jpg'
 import ImgCanyon from '../../assets/images/viajes/canyon.jpg'
 import ImgPalomino from '../../assets/images/viajes/palomino.jpg'
-import ImgTayrona from '../../assets/images/viajes/tayrona.jpg'
 import ImgTortuga from '../../assets/images/viajes/tortuga.jpg'
+import ImgPerdidos from '../../assets/images/viajes/canyon1.jpg'
+import ImgColores from '../../assets/images/viajes/colores.jpg'
+import ImgCusco from '../../assets/images/viajes/cusco.jpg'
+import ImgHuacachina from '../../assets/images/viajes/huacachina.jpg'
+import ImgHumantay from '../../assets/images/viajes/humantay.jpg'
+import ImgIslaFuerte from '../../assets/images/viajes/isla_fuerte.jpg'
+import ImgLima from '../../assets/images/viajes/lima.jpg'
 
 function About(){
     const viajes = [
         {
             'id':1,
             'imagen':ImgBarichara,
-            'titulo':'Barichara',
-            'descripcion':'El denominado pueblo más lindo de Colombia. Este destino sobresale por tener calles hermosas llenas de vida y color, resaltando su arquitectura colonial.'
+            'titulo':'Barichara, Colombia'
         },
         {
             'id':2,
             'imagen':ImgCaboDeLaVela,
-            'titulo':'Cabo de la vela',
-            'descripcion':'Un lugar maravilloso donde se encuentran playas paradisíacas las cuales se contrastan con la zona desértica más amplia de Colombia. De aquí se logran ver los atardeceres más lindos de todo el país.'
+            'titulo':'Cabo de la vela, Colombia'
         },
         {
             'id':3,
             'imagen':ImgCanyon,
-            'titulo':'Cañón del Chicamocha',
-            'descripcion':'Es un monumento natural que realmente impone cuando uno lo ve, a primera vista parece ser un lugar árido, pero a medida que uno se adentra va encontrando gran cantidad de biodiversidad en un mismo lugar.'
+            'titulo':'Cañón del Chicamocha, Colombia'
         },
         {
             'id':4,
             'imagen':ImgPalomino,
-            'titulo':'Palomino',
-            'descripcion':'Este espacio es la clara definición de un destino de descanso y aventura. Mi forma de definirlo es un pueblo "hippie" en el que se puede disfrutar las aguas del mar Caribe.'
+            'titulo':'Palomino, Colombia'
         },
         {
             'id':5,
-            'imagen':ImgTayrona,
-            'titulo':'Parque Nacional Tayrona',
-            'descripcion':'Una pequeña vista de cómo se ve el parque nacional del Tayrona desde las profundidades del mar. Esta fauna y flora marina me ha enamorado y apasionado debido a que es la forma en la que uno puede conectar el alma con el mundo.'
+            'imagen':ImgTortuga,
+            'titulo':'Tortuga, Colombia'
         },
         {
             'id':6,
-            'imagen':ImgTortuga,
-            'titulo':'Tortuga',
-            'descripcion':'Esta foto representa mucho para mí, es la única vez que he visto una tortuga gigante. Al ver semejante belleza la frase "La tierra no es una herencia de tus padres, es un préstamo a tus hijos" toma más fuerza.'
+            'imagen':ImgPerdidos,
+            'titulo':'Cañón de los perdidos, Perú'
+        },
+        {
+            'id':7,
+            'imagen':ImgColores,
+            'titulo':'Montaña de los 7 colores, Perú'
+        },
+        {
+            'id':8,
+            'imagen':ImgCusco,
+            'titulo':'Cusco, Perú'
+        },
+        {
+            'id':9,
+            'imagen':ImgHuacachina,
+            'titulo':'Huacachina, Perú'
+        },
+        {
+            'id':10,
+            'imagen':ImgHumantay,
+            'titulo':'Laguna Humantay, Perú'
+        },
+        {
+            'id':11,
+            'imagen':ImgIslaFuerte,
+            'titulo':'Isla Fuerte, Colombia'
+        },
+        {
+            'id':12,
+            'imagen':ImgLima,
+            'titulo':'Lima, Perú'
         }
     ]
 
@@ -131,6 +163,16 @@ function About(){
             'id': 9,
             'imagen': SvgGitHub,
             'titulo': 'GITHUB'
+        },
+        {
+            'id': 10,
+            'imagen': NodeJs,
+            'titulo': 'NODEJS'
+        },
+        {
+            'id': 11,
+            'imagen': Laravel,
+            'titulo': 'LARAVEL'
         }
     ]
     return(
@@ -215,31 +257,23 @@ function About(){
             <div className="row title-about">
                 <div className="col-lg-12">
                     <h1>
-                        <AnimacionLetras palabra={'Hobbies'}/>
+                        <AnimacionLetras palabra={'Algunos viajes'}/>
                     </h1>
                 </div>
             </div>
             <section className="row d-flex justify-content-center align-items-center hobbies">
                 <div className="col-lg-12 text-zone">
-                    <p>
-                        Desde una edad muy corta comencé a practicar gran variedad de deportes entre los que más se destacan son: el fútbol en él he aprendido 
-                        la importancia del trabajo en equipo, el ajedrez el cual me ha ayudado a desarrollar mi pensamiento lógico, el buceo como una forma de conexión con
-                        el mundo y por último la escalada la cual ha sido un reto para mi debido a mi miedo a las alturas.<br />
-                        Una de las cosas más lindas de la vida es apreciar el arte es por ello que en ocasiones me gusta pintar y apreciar un buen concierto.<br />
-                        Me encanta explorar nuevos lugares es por ello que a continuación muestro algunas fotografías que he tomado de lugares espectaculares de 
-                        Colombia resaltando sobre todo lo bello que es la naturaleza:
-                    </p>
+                    <p>Soy una persona que le encanta viajar y conocer rincones rodeados de magia de este mundo, acá dejo algunos de estos lugares.</p>
                 </div>
                 {
                     viajes.map(viaje=>{
-                        const {id,imagen,titulo,descripcion} = viaje
+                        const {id,imagen,titulo} = viaje
                         const backContents = (<>
                             <h1>{titulo}</h1>
-                            <p>{descripcion} </p>
                         </>)
                         
                         return (
-                            <div className="col-md-6 col-lg-4 card-travel" key={id}>
+                            <div className="col-md-6 col-lg-3 card-travel" key={id}>
                                 <CardFlip 
                                     frontContent={<img src={imagen} alt={titulo}/>} 
                                     backContent={backContents} 

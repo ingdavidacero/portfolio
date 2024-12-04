@@ -18,7 +18,7 @@ function SideBar(){
                             exact="true" 
                             activeclassname="active"
                             className="principal"
-                            to="/"
+                            to="/portfolio"
                         >
                             <FontAwesomeIcon icon={faHouse} color="#C0C0C0"/>
                         </NavLink>
@@ -28,7 +28,7 @@ function SideBar(){
                             exact="true" 
                             activeclassname="active"
                             className="sobre-mi"
-                            to="/sobre-mi"
+                            to="/portfolio/sobre-mi"
                         >
                             <FontAwesomeIcon icon={faUser} color="#93B1A6"/>
                         </NavLink>
@@ -38,7 +38,7 @@ function SideBar(){
                             exact="true" 
                             activeclassname="active"
                             className="proyectos"
-                            to="/proyectos"
+                            to="/portfolio/proyectos"
                         >
                             <FontAwesomeIcon icon={faDiagramProject} color="#93B1A6"/>
                         </NavLink>
@@ -48,7 +48,7 @@ function SideBar(){
                             exact="true" 
                             activeclassname="active"
                             className="contacto"
-                            to="/contacto"
+                            to="/portfolio/contacto"
                         >
                             <FontAwesomeIcon icon={faAddressCard} color="#93B1A6"/>
                         </NavLink>

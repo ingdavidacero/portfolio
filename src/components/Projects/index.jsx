@@ -8,12 +8,109 @@ import SvgReact from '../../assets/images/logos/react.svg'
 import SvgSass from '../../assets/images/logos/sass.svg'
 import SvgPHP from '../../assets/images/logos/php.svg'
 import SvgMysql from '../../assets/images/logos/mysql.svg'
+import SvgNode from '../../assets/images/logos/node.svg'
+import SvgLaravel from '../../assets/images/logos/laravel.svg'
 //Imagenes
 import ImgProyectos from '../../assets/images/proyectos/portafolio.jpg'
 import ImgAtenea from '../../assets/images/proyectos/atenea.jpg'
+import ImgStore from '../../assets/images/proyectos/store.png'
+import ImgForo from '../../assets/images/proyectos/foro.png'
+import ImgTDD from '../../assets/images/proyectos/tdd.png'
+import ImgApiLaravel from '../../assets/images/proyectos/api_laravel.png'
 
 function Projects(){
     const proyectos = [
+        {
+            'id':6,
+            'url':'https://github.com/ingdavidacero/laravel-api-versions',
+            'titulo':'Versionamiento de API con Laravel',
+            'descripcion':'API con dos versiones creada con Laravel teniendo en cuenta autenticación con token web JSON.',
+            'imagen':ImgApiLaravel,
+            'techstack':[
+                {
+                    'id':1,
+                    'nombre':'Laravel',
+                    'imagen': SvgLaravel
+                },
+                {
+                    'id':2,
+                    'nombre':'MYSQL',
+                    'imagen': SvgMysql
+                },
+                {
+                    'id':3,
+                    'nombre':'PHP',
+                    'imagen': SvgPHP
+                }
+            ]
+        },
+        {
+            'id':5,
+            'url':'https://github.com/ingdavidacero/tdd-laravel',
+            'titulo':'Test Driven Development con Laravel',
+            'descripcion':'A partir de un CRUD de repositorios hecho en Laravel se implementa Test Driven Development teniendo en cuenta index, create, store, update, destroy, validation, show, policy y edit.',
+            'imagen':ImgTDD,
+            'techstack':[
+                {
+                    'id':1,
+                    'nombre':'Laravel',
+                    'imagen': SvgLaravel
+                },
+                {
+                    'id':2,
+                    'nombre':'MYSQL',
+                    'imagen': SvgMysql
+                },
+                {
+                    'id':3,
+                    'nombre':'PHP',
+                    'imagen': SvgPHP
+                }
+            ]
+        },
+        {
+            'id':4,
+            'url':'https://github.com/ingdavidacero/foro',
+            'titulo':'Foro con Laravel LiveWire',
+            'descripcion':'Un foro construido a partir de interfaces dinámicas con LiveWire y conexión a MySql.',
+            'imagen':ImgForo,
+            'techstack':[
+                {
+                    'id':1,
+                    'nombre':'Laravel',
+                    'imagen': SvgLaravel
+                },
+                {
+                    'id':2,
+                    'nombre':'MYSQL',
+                    'imagen': SvgMysql
+                },
+                {
+                    'id':3,
+                    'nombre':'PHP',
+                    'imagen': SvgPHP
+                }
+            ]
+        },
+        {
+            'id':3,
+            'url':'https://github.com/ingdavidacero/store_api',
+            'titulo':'API de tienda',
+            'descripcion':'Es un API REST de una tienda, usando Express.js (teniendo en cuenta la modularidad de ECMAScript v6) y docker para la base de datos.',
+            'imagen':ImgStore,
+            'techstack':[
+                {
+                    'id':1,
+                    'nombre':'Node',
+                    'imagen': SvgNode
+                },
+                {
+                    'id':2,
+                    'nombre':'MYSQL',
+                    'imagen': SvgMysql
+                }
+            ]
+        },
         {
             'id':2,
             'url':'https://github.com/ingdavidacero/ateneaapp',
