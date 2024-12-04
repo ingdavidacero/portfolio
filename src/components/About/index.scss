@@ -49,6 +49,7 @@
     }
     .techstack{
         .tech_icon {
+            
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -56,11 +57,21 @@
             text-align: center;
             padding: 5px;
             img{
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                padding: 10px;
                 width: 40%;
             }
             span{
                 font-size: var(--24px);
                 font-weight: 600;
+            }
+            &:hover{
+                transform: scale(1.2, 1.2);
+                transition: all 0.35s;
             }
         }
     }

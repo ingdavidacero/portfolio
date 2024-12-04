@@ -55,7 +55,7 @@ function About(){
         {
             'id':5,
             'imagen':ImgTortuga,
-            'titulo':'Tortuga, Colombia'
+            'titulo':'Mar Caribe, Colombia'
         },
         {
             'id':6,
@@ -100,21 +100,73 @@ function About(){
             'url': 'https://www.scapanalysis.com',
             'titulo': 'SCAP ANALYSIS',
             'subtitulo': 'Desarrollo Back-End(2017-2018)',
-            'descripcion' : 'En este periodo de tiempo tuve mis primeros acercamientos con PHP y JavaScript enfocado en la automatización de procesos a partir de datos.'
+            'funciones' : [
+                {
+                    'id_responsabilidad':1,
+                    'texto':'Desarrollo Backend: Primeros acercamientos con PHP y JavaScript enfocado en la automatización de procesos a partir de datos.'
+                },
+                {
+                    'id_responsabilidad':2,
+                    'texto':'Gestión de Bases de Datos: Optimización de consultas para mejorar el rendimiento en el análisis de datos usando MySQL.'
+                }
+            ]
         },
         {
             'id': 2,
             'url': 'https://www.aviamarketing.com/',
             'titulo': 'Avia Marketing',
             'subtitulo': 'Programador Jr(2021-2022)',
-            'descripcion': 'Desarrollé e hice mantenimiento de aplicaciones corporativas de uso interno, también en la constante mejora de aplicaciones orientadas a nivel cliente. Durante este tiempo hice uso de tecnologías como PHP(Vanilla, Laravel y Prestashop), Mysql, JavaScript vanilla, git, linux y tuve mi primer acercamiento con .NET.' 
+            'funciones': [
+                {
+                    'id_responsabilidad':3,
+                    'texto':'Desarrollo Backend: Programación en PHP, JavaScript y .NET con experiencia en entornos de desarrollo modernos.',
+                },
+                {
+                    'id_responsabilidad':4,
+                    'texto':'Frameworks: Dominio del uso de Laravel para el desarrollo de aplicaciones web.',
+                },
+                {
+                    'id_responsabilidad':5,
+                    'texto':'Diseño de Bases de Datos: Modelado y optimización de bases de datos relacionales.',
+                },
+                {
+                    'id_responsabilidad':6,
+                    'texto': 'Gestión de Bases de Datos: Uso de MySQL para consultas, integridad de datos y rendimiento.',
+                },
+                {
+                    'id_responsabilidad':7,
+                    'texto':'Cloud Computing: Gestión y configuración de servicios de bases de datos en Amazon RDS.'
+                }
+            ]
+
         },
         {
             'id': 3,
             'url': 'https://www.celeusgroup.com/',
             'titulo': 'Constructora Celeus Group',
             'subtitulo': 'Desarrollo web(2019-hoy)',
-            'descripcion': 'En la empresa he desempeñado el cargo de Full Stack con el uso de PHP, HTML, JavaScript vanilla, Mysql, git y linux. He implementado generación de documentos, ventas de inmuebles, automatización de procesos manuales, configuración de pasarela de pago, manejo de informes y gestión de contenidos.'
+            'funciones': [
+                {
+                    'id_responsabilidad':8,
+                    'texto':'Desarrollo Backend: Experiencia en desarrollo con PHP y JavaScript, creando aplicaciones eficientes y escalables'
+                },
+                {
+                    'id_responsabilidad':9,
+                    'texto':'Diseño y Administración de Bases de Datos: Modelado, diseño y optimización de bases de datos relacionales, implementación de estándares y políticas de seguridad para la administración de bases de datos, administración de bases de datos para garantizar su integridad y disponibilidad.'
+                },
+                {
+                    'id_responsabilidad':10,
+                    'texto':'Configuración de Servidores: Configuración, administración y mantenimiento de servidores Linux'
+                },
+                {
+                    'id_responsabilidad':11,
+                    'texto':'Seguridad de Sistemas: Implementación de técnicas de ciberseguridad para el sistema.'
+                },
+                {
+                    'id_responsabilidad':12,
+                    'texto':'Manejo y optimización de transacciones de clientes, asegurando precisión, eficiencia y seguridad en los procesos.'
+                }
+            ]
         }
     ]
 
@@ -213,11 +265,16 @@ function About(){
             <section className="row d-flex justify-content-center align-items-center experiencia">
                 {
                     trabajos.map(trabajo=>{
-                        const {id,url,titulo,subtitulo,descripcion} = trabajo
+                        const {id,url,titulo,subtitulo,funciones} = trabajo
                         const contenido = (<>
                             <h1>{titulo}</h1>
                             <h2>{subtitulo}</h2>
-                            <p>{descripcion}</p>
+                            <ul>
+                            {funciones.map(responsabilidad=>{
+                                const {id_responsabilidad,texto} = responsabilidad
+                                return <li key={id_responsabilidad}><p>{texto}</p></li>
+                            })}
+                            </ul>
                         </>)
                         return (
                             <div className="col-lg-12" key={id}>
